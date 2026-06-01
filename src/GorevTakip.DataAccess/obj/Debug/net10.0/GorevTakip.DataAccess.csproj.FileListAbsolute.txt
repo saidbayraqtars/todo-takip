@@ -1,0 +1,17 @@
+C:\Users\saidb\Desktop\projeler\Yeni klasör\src\GorevTakip.DataAccess\bin\Debug\net10.0\GorevTakip.DataAccess.deps.json
+C:\Users\saidb\Desktop\projeler\Yeni klasör\src\GorevTakip.DataAccess\bin\Debug\net10.0\GorevTakip.DataAccess.runtimeconfig.json
+C:\Users\saidb\Desktop\projeler\Yeni klasör\src\GorevTakip.DataAccess\bin\Debug\net10.0\GorevTakip.DataAccess.dll
+C:\Users\saidb\Desktop\projeler\Yeni klasör\src\GorevTakip.DataAccess\bin\Debug\net10.0\GorevTakip.DataAccess.pdb
+C:\Users\saidb\Desktop\projeler\Yeni klasör\src\GorevTakip.DataAccess\bin\Debug\net10.0\GorevTakip.Entities.dll
+C:\Users\saidb\Desktop\projeler\Yeni klasör\src\GorevTakip.DataAccess\bin\Debug\net10.0\GorevTakip.Entities.pdb
+C:\Users\saidb\Desktop\projeler\Yeni klasör\src\GorevTakip.DataAccess\obj\Debug\net10.0\GorevTakip.DataAccess.csproj.AssemblyReference.cache
+C:\Users\saidb\Desktop\projeler\Yeni klasör\src\GorevTakip.DataAccess\obj\Debug\net10.0\GorevTakip.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\saidb\Desktop\projeler\Yeni klasör\src\GorevTakip.DataAccess\obj\Debug\net10.0\GorevTakip.DataAccess.AssemblyInfoInputs.cache
+C:\Users\saidb\Desktop\projeler\Yeni klasör\src\GorevTakip.DataAccess\obj\Debug\net10.0\GorevTakip.DataAccess.AssemblyInfo.cs
+C:\Users\saidb\Desktop\projeler\Yeni klasör\src\GorevTakip.DataAccess\obj\Debug\net10.0\GorevTakip.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\saidb\Desktop\projeler\Yeni klasör\src\GorevTakip.DataAccess\obj\Debug\net10.0\GorevTak.0F4154D6.Up2Date
+C:\Users\saidb\Desktop\projeler\Yeni klasör\src\GorevTakip.DataAccess\obj\Debug\net10.0\GorevTakip.DataAccess.dll
+C:\Users\saidb\Desktop\projeler\Yeni klasör\src\GorevTakip.DataAccess\obj\Debug\net10.0\refint\GorevTakip.DataAccess.dll
+C:\Users\saidb\Desktop\projeler\Yeni klasör\src\GorevTakip.DataAccess\obj\Debug\net10.0\GorevTakip.DataAccess.pdb
+C:\Users\saidb\Desktop\projeler\Yeni klasör\src\GorevTakip.DataAccess\obj\Debug\net10.0\GorevTakip.DataAccess.genruntimeconfig.cache
+C:\Users\saidb\Desktop\projeler\Yeni klasör\src\GorevTakip.DataAccess\obj\Debug\net10.0\ref\GorevTakip.DataAccess.dll

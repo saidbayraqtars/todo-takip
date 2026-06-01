@@ -1,0 +1,46 @@
+@*
+    Bu dosya: Giris Yap ekrani (Ekran 1).
+    Kullanici adi + sifre alir, formu Account/Login POST'a gonderir.
+    Hatali girislerde validation mesajlari gosterilir.
+*@
+@model LoginViewModel
+@{
+    ViewData["Title"] = "Giriş Yap";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-5">
+        <div class="card shadow-sm">
+            <div class="card-body p-4">
+                <h3 class="card-title text-center mb-4">Giriş Yap</h3>
+
+                <form asp-action="Login" method="post">
+                    @* Genel hata (orn: kullanici adi/sifre hatali) *@
+                    <div asp-validation-summary="ModelOnly" class="text-danger small mb-2"></div>
+
+                    <div class="mb-3">
+                        <label asp-for="KullaniciAdi" class="form-label"></label>
+                        <input asp-for="KullaniciAdi" class="form-control" autofocus />
+                        <span asp-validation-for="KullaniciAdi" class="text-danger small"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Sifre" class="form-label"></label>
+                        <input asp-for="Sifre" class="form-control" />
+                        <span asp-validation-for="Sifre" class="text-danger small"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">Giriş Yap</button>
+                </form>
+
+                <p class="text-center mt-3 mb-0">
+                    Hesabın yok mu? <a asp-action="Register">Kayıt ol</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

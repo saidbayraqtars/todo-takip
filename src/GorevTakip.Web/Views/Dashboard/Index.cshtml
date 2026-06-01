@@ -1,0 +1,64 @@
+@*
+    Bu dosya: Dashboard / Ana Sayfa (Ekran 3).
+    Ust kisimda 3 ozet kart (toplam / tamamlanan / bekleyen).
+    Altta son tarihi yaklasan bekleyen gorevlerin kisa listesi.
+*@
+@model DashboardViewModel
+@{
+    ViewData["Title"] = "Ana Sayfa";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="mb-0">Merhaba, @Model.KullaniciAdi 👋</h2>
+    <a asp-controller="Gorev" asp-action="Ekle" class="btn btn-primary">+ Yeni Görev</a>
+</div>
+
+@* Ozet sayac kartlari - responsive: mobilde alt alta, genis ekranda yan yana *@
+<div class="row g-3 mb-4">
+    <div class="col-12 col-md-4">
+        <div class="card text-bg-secondary shadow-sm h-100">
+            <div class="card-body text-center">
+                <div class="display-5 fw-bold">@Model.Toplam</div>
+                <div>Toplam Görev</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-4">
+        <div class="card text-bg-warning shadow-sm h-100">
+            <div class="card-body text-center">
+                <div class="display-5 fw-bold">@Model.Bekleyen</div>
+                <div>Bekleyen Görev</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-4">
+        <div class="card text-bg-success shadow-sm h-100">
+            <div class="card-body text-center">
+                <div class="display-5 fw-bold">@Model.Tamamlanan</div>
+                <div>Tamamlanan Görev</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card shadow-sm">
+    <div class="card-header bg-white fw-bold">Son Tarihi Yaklaşan Görevler</div>
+    <div class="card-body">
+        @if (Model.YaklasanGorevler.Count == 0)
+        {
+            <p class="text-muted mb-0">Bekleyen görev yok. 🎉</p>
+        }
+        else
+        {
+            <ul class="list-group list-group-flush">
+                @foreach (var gorev in Model.YaklasanGorevler)
+                {
+                    <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                        <a asp-controller="Gorev" asp-action="Detay" asp-route-id="@gorev.Id">@gorev.Baslik</a>
+                        <span class="badge text-bg-light">@gorev.SonTarih.ToString("dd.MM.yyyy")</span>
+                    </li>
+                }
+            </ul>
+        }
+    </div>
+</div>

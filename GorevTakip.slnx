@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/GorevTakip.Business/GorevTakip.Business.csproj" />
+    <Project Path="src/GorevTakip.DataAccess/GorevTakip.DataAccess.csproj" />
+    <Project Path="src/GorevTakip.Entities/GorevTakip.Entities.csproj" />
+    <Project Path="src/GorevTakip.Web/GorevTakip.Web.csproj" />
+  </Folder>
+</Solution>

@@ -1,0 +1,15 @@
+@*
+    Bu dosya: Gorev Listeleme ekrani (Ekran 4).
+    Kullaniciya ait TUM gorevleri listeler. Tablo cizimi ortak partial'a devredilir.
+*@
+@model List<Gorev>
+@{
+    ViewData["Title"] = "Görevlerim";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h2 class="mb-0">Görevlerim</h2>
+    <a asp-action="Ekle" class="btn btn-primary">+ Yeni Görev</a>
+</div>
+
+<partial name="_GorevListesi" model="Model" />

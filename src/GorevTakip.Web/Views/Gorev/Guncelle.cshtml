@@ -1,0 +1,31 @@
+@*
+    Bu dosya: Gorev Guncelle ekrani (Ekran 6).
+    Mevcut gorevin bilgileriyle dolu gelir; durum da degistirilebilir.
+    Form alanlari ortak _GorevForm partial'indan gelir.
+*@
+@model GorevFormViewModel
+@{
+    ViewData["Title"] = "Görevi Güncelle";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-7">
+        <div class="card shadow-sm">
+            <div class="card-body p-4">
+                <h3 class="card-title mb-4">Görevi Güncelle</h3>
+
+                <form asp-action="Guncelle" method="post">
+                    <partial name="_GorevForm" model="Model" />
+                    <div class="d-flex gap-2">
+                        <button type="submit" class="btn btn-primary">Güncelle</button>
+                        <a asp-action="Detay" asp-route-id="@Model.Id" class="btn btn-secondary">Vazgeç</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

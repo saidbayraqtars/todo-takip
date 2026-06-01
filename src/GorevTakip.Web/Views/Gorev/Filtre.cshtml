@@ -1,0 +1,12 @@
+@*
+    Bu dosya: Bekleyen (Ekran 9) ve Tamamlanan (Ekran 8) gorevlerin ORTAK listesi.
+    Baslik controller'dan ViewData["Baslik"] ile gelir. Tablo yine ortak partial ile cizilir.
+*@
+@model List<Gorev>
+@{
+    ViewData["Title"] = ViewData["Baslik"] as string;
+}
+
+<h2 class="mb-3">@ViewData["Baslik"]</h2>
+
+<partial name="_GorevListesi" model="Model" />

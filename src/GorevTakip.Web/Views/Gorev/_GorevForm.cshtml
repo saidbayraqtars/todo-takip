@@ -1,0 +1,36 @@
+@*
+    Bu dosya: Gorev Ekle ve Guncelle formlarinin ORTAK alanlari (partial).
+    Durum secimi sadece Duzenleme modunda gosterilir. Id gizli alanda tasinir.
+    <form> etiketi bu partial'i cagiran view'da; boylece dogru action'a POST edilir.
+*@
+@model GorevFormViewModel
+
+<div asp-validation-summary="ModelOnly" class="text-danger small mb-2"></div>
+<input type="hidden" asp-for="Id" />
+<input type="hidden" asp-for="DuzenlemeModu" />
+
+<div class="mb-3">
+    <label asp-for="Baslik" class="form-label"></label>
+    <input asp-for="Baslik" class="form-control" autofocus />
+    <span asp-validation-for="Baslik" class="text-danger small"></span>
+</div>
+
+<div class="mb-3">
+    <label asp-for="Aciklama" class="form-label"></label>
+    <textarea asp-for="Aciklama" class="form-control" rows="4"></textarea>
+    <span asp-validation-for="Aciklama" class="text-danger small"></span>
+</div>
+
+<div class="mb-3">
+    <label asp-for="SonTarih" class="form-label"></label>
+    <input asp-for="SonTarih" class="form-control" type="date" />
+    <span asp-validation-for="SonTarih" class="text-danger small"></span>
+</div>
+
+@if (Model.DuzenlemeModu)
+{
+    <div class="mb-3">
+        <label asp-for="Durum" class="form-label"></label>
+        <select asp-for="Durum" asp-items="Html.GetEnumSelectList<GorevDurum>()" class="form-select"></select>
+    </div>
+}

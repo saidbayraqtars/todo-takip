@@ -1,0 +1,104 @@
+@*
+    Bu dosya: Tum sayfalarin ortak iskeleti (master layout).
+    Ust menu, Bootstrap, responsive yapi ve TempData mesaj kutusu burada.
+    Menu, kullanici giris yapmissa farkli, yapmamissa farkli gorunur.
+*@
+@{
+    // Session'dan giris durumu ve kullanici adi (menu icin)
+    var kullaniciId = Context.Session.GetKullaniciId();
+    var kullaniciAdi = Context.Session.GetString(SessionKeys.KullaniciAdi);
+    bool girisYapildi = kullaniciId is not null;
+}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Görev Takip</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body class="bg-light">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+            <div class="container">
+                <a class="navbar-brand fw-bold" asp-controller="Home" asp-action="Index">
+                    ✓ Görev Takip
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                        aria-controls="mainNav" aria-expanded="false" aria-label="Menüyü aç/kapat">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    @if (girisYapildi)
+                    {
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Dashboard" asp-action="Index">Ana Sayfa</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Gorev" asp-action="Index">Görevlerim</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Gorev" asp-action="Bekleyenler">Bekleyenler</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Gorev" asp-action="Tamamlananlar">Tamamlananlar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Gorev" asp-action="Ekle">+ Yeni Görev</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Account" asp-action="Profil">👤 @kullaniciAdi</a>
+                            </li>
+                            <li class="nav-item">
+                                <form asp-controller="Account" asp-action="Logout" method="post" class="d-inline">
+                                    @Html.AntiForgeryToken()
+                                    <button type="submit" class="btn btn-sm btn-outline-light ms-lg-2">Çıkış</button>
+                                </form>
+                            </li>
+                        </ul>
+                    }
+                    else
+                    {
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Account" asp-action="Login">Giriş Yap</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Account" asp-action="Register">Kayıt Ol</a>
+                            </li>
+                        </ul>
+                    }
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container py-4">
+        <main role="main">
+            @* Islem sonrasi gosterilen basari mesaji (ekledim/sildim/guncelledim) *@
+            @if (TempData["Mesaj"] is not null)
+            {
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    @TempData["Mesaj"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Kapat"></button>
+                </div>
+            }
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top text-muted py-3 mt-4">
+        <div class="container text-center">
+            &copy; 2026 - Görev Takip Sistemi
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

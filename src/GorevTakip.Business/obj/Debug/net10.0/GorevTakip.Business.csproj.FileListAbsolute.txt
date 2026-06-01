@@ -1,0 +1,17 @@
+C:\Users\saidb\Desktop\projeler\Yeni klasör\src\GorevTakip.Business\bin\Debug\net10.0\GorevTakip.Business.deps.json
+C:\Users\saidb\Desktop\projeler\Yeni klasör\src\GorevTakip.Business\bin\Debug\net10.0\GorevTakip.Business.dll
+C:\Users\saidb\Desktop\projeler\Yeni klasör\src\GorevTakip.Business\bin\Debug\net10.0\GorevTakip.Business.pdb
+C:\Users\saidb\Desktop\projeler\Yeni klasör\src\GorevTakip.Business\bin\Debug\net10.0\GorevTakip.DataAccess.dll
+C:\Users\saidb\Desktop\projeler\Yeni klasör\src\GorevTakip.Business\bin\Debug\net10.0\GorevTakip.Entities.dll
+C:\Users\saidb\Desktop\projeler\Yeni klasör\src\GorevTakip.Business\bin\Debug\net10.0\GorevTakip.DataAccess.pdb
+C:\Users\saidb\Desktop\projeler\Yeni klasör\src\GorevTakip.Business\bin\Debug\net10.0\GorevTakip.Entities.pdb
+C:\Users\saidb\Desktop\projeler\Yeni klasör\src\GorevTakip.Business\obj\Debug\net10.0\GorevTakip.Business.csproj.AssemblyReference.cache
+C:\Users\saidb\Desktop\projeler\Yeni klasör\src\GorevTakip.Business\obj\Debug\net10.0\GorevTakip.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\saidb\Desktop\projeler\Yeni klasör\src\GorevTakip.Business\obj\Debug\net10.0\GorevTakip.Business.AssemblyInfoInputs.cache
+C:\Users\saidb\Desktop\projeler\Yeni klasör\src\GorevTakip.Business\obj\Debug\net10.0\GorevTakip.Business.AssemblyInfo.cs
+C:\Users\saidb\Desktop\projeler\Yeni klasör\src\GorevTakip.Business\obj\Debug\net10.0\GorevTakip.Business.csproj.CoreCompileInputs.cache
+C:\Users\saidb\Desktop\projeler\Yeni klasör\src\GorevTakip.Business\obj\Debug\net10.0\GorevTak.5E78A676.Up2Date
+C:\Users\saidb\Desktop\projeler\Yeni klasör\src\GorevTakip.Business\obj\Debug\net10.0\GorevTakip.Business.dll
+C:\Users\saidb\Desktop\projeler\Yeni klasör\src\GorevTakip.Business\obj\Debug\net10.0\refint\GorevTakip.Business.dll
+C:\Users\saidb\Desktop\projeler\Yeni klasör\src\GorevTakip.Business\obj\Debug\net10.0\GorevTakip.Business.pdb
+C:\Users\saidb\Desktop\projeler\Yeni klasör\src\GorevTakip.Business\obj\Debug\net10.0\ref\GorevTakip.Business.dll

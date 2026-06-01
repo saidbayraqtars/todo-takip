@@ -1,0 +1,37 @@
+@*
+    Bu dosya: Profil ekrani (Ekran 10).
+    Giris yapan kullanicinin bilgilerini gosterir ve buradan cikis (Logout) yapilir.
+*@
+@model Kullanici
+@{
+    ViewData["Title"] = "Profil";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card shadow-sm">
+            <div class="card-body p-4">
+                <h3 class="card-title mb-4">👤 Profil Bilgileri</h3>
+
+                <dl class="row mb-0">
+                    <dt class="col-sm-4">Kullanıcı Adı</dt>
+                    <dd class="col-sm-8">@Model.KullaniciAdi</dd>
+
+                    <dt class="col-sm-4">Ad Soyad</dt>
+                    <dd class="col-sm-8">@(string.IsNullOrWhiteSpace(Model.AdSoyad) ? "-" : Model.AdSoyad)</dd>
+
+                    <dt class="col-sm-4">Kayıt Tarihi</dt>
+                    <dd class="col-sm-8">@Model.OlusturmaTarihi.ToLocalTime().ToString("dd.MM.yyyy HH:mm")</dd>
+                </dl>
+
+                <hr />
+
+                @* Cikis: session'i kapatan POST formu *@
+                <form asp-action="Logout" method="post">
+                    <button type="submit" class="btn btn-danger">Çıkış Yap</button>
+                    <a asp-controller="Dashboard" asp-action="Index" class="btn btn-secondary">Ana Sayfa</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
