@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lTr/vVHB+lo=",
+  "dgSpecHash": "hRyXjKYKLYA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\saidb\\Desktop\\projeler\\Yeni klasör\\src\\GorevTakip.Web\\GorevTakip.Web.csproj",
+  "projectFilePath": "C:\\Users\\saidb\\Desktop\\projeler\\todo-takip\\src\\GorevTakip.Web\\GorevTakip.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\saidb\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\saidb\\.nuget\\packages\\microsoft.build.framework\\18.0.2\\microsoft.build.framework.18.0.2.nupkg.sha512",

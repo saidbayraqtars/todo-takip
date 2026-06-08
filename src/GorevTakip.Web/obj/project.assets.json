@@ -2456,11 +2456,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\saidb\\Desktop\\projeler\\Yeni klasör\\src\\GorevTakip.Web\\GorevTakip.Web.csproj",
+      "projectUniqueName": "C:\\Users\\saidb\\Desktop\\projeler\\todo-takip\\src\\GorevTakip.Web\\GorevTakip.Web.csproj",
       "projectName": "GorevTakip.Web",
-      "projectPath": "C:\\Users\\saidb\\Desktop\\projeler\\Yeni klasör\\src\\GorevTakip.Web\\GorevTakip.Web.csproj",
+      "projectPath": "C:\\Users\\saidb\\Desktop\\projeler\\todo-takip\\src\\GorevTakip.Web\\GorevTakip.Web.csproj",
       "packagesPath": "C:\\Users\\saidb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\saidb\\Desktop\\projeler\\Yeni klasör\\src\\GorevTakip.Web\\obj\\",
+      "outputPath": "C:\\Users\\saidb\\Desktop\\projeler\\todo-takip\\src\\GorevTakip.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\saidb\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -2475,8 +2475,8 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\Users\\saidb\\Desktop\\projeler\\Yeni klasör\\src\\GorevTakip.Business\\GorevTakip.Business.csproj": {
-              "projectPath": "C:\\Users\\saidb\\Desktop\\projeler\\Yeni klasör\\src\\GorevTakip.Business\\GorevTakip.Business.csproj"
+            "C:\\Users\\saidb\\Desktop\\projeler\\todo-takip\\src\\GorevTakip.Business\\GorevTakip.Business.csproj": {
+              "projectPath": "C:\\Users\\saidb\\Desktop\\projeler\\todo-takip\\src\\GorevTakip.Business\\GorevTakip.Business.csproj"
             }
           }
         }

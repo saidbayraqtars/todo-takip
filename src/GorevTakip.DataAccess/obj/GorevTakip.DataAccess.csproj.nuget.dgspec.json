@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\saidb\\Desktop\\projeler\\Yeni klasör\\src\\GorevTakip.DataAccess\\GorevTakip.DataAccess.csproj": {}
+    "C:\\Users\\saidb\\Desktop\\projeler\\todo-takip\\src\\GorevTakip.DataAccess\\GorevTakip.DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\saidb\\Desktop\\projeler\\Yeni klasör\\src\\GorevTakip.DataAccess\\GorevTakip.DataAccess.csproj": {
+    "C:\\Users\\saidb\\Desktop\\projeler\\todo-takip\\src\\GorevTakip.DataAccess\\GorevTakip.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\saidb\\Desktop\\projeler\\Yeni klasör\\src\\GorevTakip.DataAccess\\GorevTakip.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\saidb\\Desktop\\projeler\\todo-takip\\src\\GorevTakip.DataAccess\\GorevTakip.DataAccess.csproj",
         "projectName": "GorevTakip.DataAccess",
-        "projectPath": "C:\\Users\\saidb\\Desktop\\projeler\\Yeni klasör\\src\\GorevTakip.DataAccess\\GorevTakip.DataAccess.csproj",
+        "projectPath": "C:\\Users\\saidb\\Desktop\\projeler\\todo-takip\\src\\GorevTakip.DataAccess\\GorevTakip.DataAccess.csproj",
         "packagesPath": "C:\\Users\\saidb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\saidb\\Desktop\\projeler\\Yeni klasör\\src\\GorevTakip.DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\saidb\\Desktop\\projeler\\todo-takip\\src\\GorevTakip.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\saidb\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,8 +26,8 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\saidb\\Desktop\\projeler\\Yeni klasör\\src\\GorevTakip.Entities\\GorevTakip.Entities.csproj": {
-                "projectPath": "C:\\Users\\saidb\\Desktop\\projeler\\Yeni klasör\\src\\GorevTakip.Entities\\GorevTakip.Entities.csproj"
+              "C:\\Users\\saidb\\Desktop\\projeler\\todo-takip\\src\\GorevTakip.Entities\\GorevTakip.Entities.csproj": {
+                "projectPath": "C:\\Users\\saidb\\Desktop\\projeler\\todo-takip\\src\\GorevTakip.Entities\\GorevTakip.Entities.csproj"
               }
             }
           }
@@ -353,14 +353,14 @@
         }
       }
     },
-    "C:\\Users\\saidb\\Desktop\\projeler\\Yeni klasör\\src\\GorevTakip.Entities\\GorevTakip.Entities.csproj": {
+    "C:\\Users\\saidb\\Desktop\\projeler\\todo-takip\\src\\GorevTakip.Entities\\GorevTakip.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\saidb\\Desktop\\projeler\\Yeni klasör\\src\\GorevTakip.Entities\\GorevTakip.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\saidb\\Desktop\\projeler\\todo-takip\\src\\GorevTakip.Entities\\GorevTakip.Entities.csproj",
         "projectName": "GorevTakip.Entities",
-        "projectPath": "C:\\Users\\saidb\\Desktop\\projeler\\Yeni klasör\\src\\GorevTakip.Entities\\GorevTakip.Entities.csproj",
+        "projectPath": "C:\\Users\\saidb\\Desktop\\projeler\\todo-takip\\src\\GorevTakip.Entities\\GorevTakip.Entities.csproj",
         "packagesPath": "C:\\Users\\saidb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\saidb\\Desktop\\projeler\\Yeni klasör\\src\\GorevTakip.Entities\\obj\\",
+        "outputPath": "C:\\Users\\saidb\\Desktop\\projeler\\todo-takip\\src\\GorevTakip.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\saidb\\AppData\\Roaming\\NuGet\\NuGet.Config"
